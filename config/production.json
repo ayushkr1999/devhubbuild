@@ -1,0 +1,10 @@
+{
+    "mongoURI": "mongodb+srv://ayushkr:shanu@cluster0.hc2tt.mongodb.net/devc?retryWrites=true&w=majority",
+    "secretOrKey": "secret",
+
+    "githubClientId":
+    "222e79018209e93e0183",
+    "githubSecret":
+    "f9b8ebfa1b7b44baf161c989a19cfd4bfd1457e9"
+}
+  

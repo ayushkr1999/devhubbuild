@@ -1,4 +1,4 @@
-const { GET_PROFILE, PROFILE_ERROR,CLEAR_PROFILE ,UPDATE_PROFILE, GET_PROFILES, GET_REPOS} = require("../actions/types");
+const { GET_PROFILE, PROFILE_ERROR,CLEAR_PROFILE ,UPDATE_PROFILE, GET_PROFILES, GET_REPOS} = require("../actions/types"); 
 
 const initialState ={
     profile:null,
@@ -19,6 +19,7 @@ export default function(state =initialState,action){
                 profile:payload,
                 loading:false
             }
+
         case GET_PROFILES:
             return{
                 ...state,

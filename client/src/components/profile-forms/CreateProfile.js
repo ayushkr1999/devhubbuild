@@ -111,7 +111,7 @@ const CreateProfile =({createProfile, history})=> {
           <small className="form-text"
             >If you want your latest repos and a Github link, include your
             username</small>
-          >
+          
         </div>
         <div className="form-group">
           <textarea placeholder="A short bio of yourself" name="bio" value={githubusername} onChange={ e=>onChange(e)}></textarea>

@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import {connect} from 'react-redux';
-
+// import PostItem from '../Posts/PostItem'
 import {getPosts} from '../../actions/post'
 import Spinner from '../layout/Spinner';
 import PostItem from './PostItem'
@@ -16,7 +16,7 @@ const Posts = ({getPosts ,post:{posts,loading}}) => {
     return loading ? <Spinner />:<Fragment>
         <h1 className='large taxt-primary' >Posts</h1>
         <p className='lead'>
-            <i className='fas fa-user'/>wlwcome to comunity
+<i className='fas fa-user'/>{' '}Welcome to community
         </p>
         <PostForm />
             

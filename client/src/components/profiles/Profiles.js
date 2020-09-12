@@ -5,15 +5,14 @@ import Spinner from '../layout/Spinner'
 import { getProfiles } from '../../actions/profile';
 // imoprt getProfiles 
 import ProfileItem from './ProfileItem'
-const Profiles = ({getProfiles,profile: {profiles,loading}})=> {
+const Profiles = ({getProfiles, profile:{profiles,loading}})=> {
+    
     useEffect(()=>{
         getProfiles();
     },[getProfiles])
     
-    return (
-        <Fragment>
-          {loading ? <Spinner /> :<Fragment><h1 className='large text-primary'>Developsers</h1>
-        <p>Browse and conncet with developers</p>
+    return loading ? <Spinner /> :<Fragment><h1 className='large text-primary'>Developers</h1>
+        <p>Browse and connect with developers</p>
           <div className='profiles'>
 
               {profiles.length >0 ?(profiles.map(profile=>(
@@ -23,9 +22,9 @@ const Profiles = ({getProfiles,profile: {profiles,loading}})=> {
           
           </Fragment>
           
-          }  
-        </Fragment>
-)
+        //   }  
+        
+
 }
 
 Profiles.propTypes = {

@@ -9,6 +9,8 @@ const { json } = require('body-parser');
 const { response } = require('express');
 const config = require('config');
 const Post =require('../../models/Post')
+
+
 // @route   GET api/profile/me
 // @desc    get current users progfiile
 // @access  Public
@@ -55,7 +57,7 @@ router.post('/',[auth,
     if(skills){
         profileFields.skills=skills.split(',').map(skill=> skill.trim());
     }
-    console.log(instagram);
+    // console.log(instagram);
     //build social object
     profileFields.social ={}
         if(youtube)profileFields.social.youtube=youtube;

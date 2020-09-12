@@ -42,7 +42,7 @@ const ProfileSchema =new Schema({
         type:String,
         required:true
     },
-    loaction:{
+    location:{
         type:String,
 
     },
